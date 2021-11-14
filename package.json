@@ -1,0 +1,29 @@
+{
+  "homepage": "http://enjeck.github.io/wcp",
+  "name": "weight-change-prediction",
+  "version": "1.0.0",
+  "description": "Predictive modeling of weight change using differential equations",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "gh-pages": "^3.2.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "weight",
+    "mathematical modeling",
+    "differential equations",
+    "ODEs"
+  ]
+}
