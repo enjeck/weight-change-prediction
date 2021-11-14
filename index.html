@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Weight change prediction</title>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />  
+    <!-- D3 library used to draw line graph -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="src/script.js"></script>
+  </head>
+<body>
+  <div class="top-menu"> <a href="https://github.com/enjeck/weight-change-prediction"> GitHub </a></div>
+  <div id="main">
+    <div class="intro">
+    <h1>Weight change prediction</h1>
+    <p> If you eat X number of calories a day, will you gain or lose weight? 
+      And how does this weight change look like over time? Let's find out! </p>
+    </div>
+    <form id="form">
+      <!-- Series of input fields -->
+      <label for="age">Enter your age (in years): </label>
+      <br />
+      <input placeholder="e.g 25" type="number" id="age" value="25" required />
+      <br />
+      <label for="weight">Enter your current weight (in kg): </label>
+      <br />
+      <input
+        type="number"
+        value="80"
+        id="weight"
+        required
+      />
+      <br />
+      <label for="height">Enter your height (in cm): </label>
+      <br />
+      <input
+        type="number"
+        value="170"
+        id="height"
+        required
+      />
+      <br />
+      <label for="diet">How many calories will you eat daily?: </label>
+      <br />
+      <input
+        type="number"
+        value="1800"
+        id="diet"
+        required
+      />
+      <br />
+      <div>
+        <p>Enter your sex:</p>
+        <input type="radio" id="sexChoice1" name="sex" value="male" required />
+        <label for="sexChoice1">Male</label>
+
+        <input
+          type="radio"
+          id="sexChoice2"
+          name="sex"
+          value="female"
+          required
+        />
+        <label for="sexChoice2">Female</label>
+      </div>
+      <label for="activity">How many calories will you eat daily?: </label>
+      <br />
+      <select name="activity" id="activity" required>
+        <option value="sedentary">Sedentary (Little to no exercise )</option>
+        <option value="light-exercise">
+          Light exercise (1-3 days per week)
+        </option>
+        <option value="moderate-exercise">
+          Moderate exercise (3-5 days per week)
+        </option>
+        <option value="heavy-exercise">
+          Heavy exercise (6-7 days per week)
+        </option>
+        <option value="v-heavy-exercise">
+          Very heavy exercise (twice per day, extra heavy workouts)
+        </option>
+      </select>
+      <br />
+      <!-- Submit button -->
+      <input type="submit" value="Predict" id="predict-btn" />
+    </form>
+    <div id ="output">
+      <h2 class="output-text"> Predictions over 100 months (~8 years)</h2>
+
+      <!-- Output area for the line chart-->
+      <h3 class="output-text"> Line chart</h3>
+    <div id="line-chart">
+    </div>
+
+    <!-- Output area for the table of chart-->
+    <h3 class="output-text"> Table of values</h3>
+    <div id="table"></div>
+  </div>
+  </div>
+  
+</body>
+</html>
