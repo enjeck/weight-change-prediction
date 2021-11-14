@@ -1,6 +1,6 @@
 {
-  "homepage": "http://enjeck.github.io/wcp",
-  "name": "wcp",
+  "homepage": "http://enjeck.com/weight-change-prediction/",
+  "name": "weight-change-prediction",
   "version": "1.0.0",
   "description": "Predictive modeling of weight change using differential equations",
   "main": "index.html",
