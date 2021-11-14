@@ -1,0 +1,122 @@
+.top-menu {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-menu a {
+    font-weight: bold;
+}
+
+#main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+
+.intro h1 {
+    text-align: center;
+    font-weight: bold;
+    color:blueviolet;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#form {
+    padding: 20px;
+    background: #eee;
+}
+
+#form input, select {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#form label {
+    line-height: 30px;
+}
+
+#form select {
+   max-width: 300px;
+}
+
+#form #predict-btn {
+    outline: none;
+    border: 0;
+    background:blueviolet;
+    padding: 10px 40px;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#output, #line-chart {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#line-chart{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h2.output-text {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+.output-text {
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+    /* Hide the output area text by default*/
+    display: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 25%;
+  }
+  .red {
+    color: red;
+  }
+  .green {
+    color: green;
+  }
+
+
+@media only screen and (max-width: 500px) {
+    #form input[type=number], #form select {
+        width: 100%;
+    }
+    
+    #form #predict-btn {
+        width: 100%;
+    }
+  }
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
